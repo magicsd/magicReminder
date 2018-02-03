@@ -36,7 +36,7 @@ input {
 .delete-button:hover {
   font-weight: bold;
   color: white;
-  animation: fade 0.5s;
+  animation: fadeColor 0.5s;
   background-color: red;
 }
 
@@ -50,7 +50,7 @@ input {
   font-style: italic;
 }
 
-@keyframes fade {
+@keyframes fadeColor {
   from {
     background-color: #dedede;
   }
@@ -59,10 +59,19 @@ input {
   }
 }
 
+@keyframes fadeOpacity {
+  from {opacity: 0}
+  to {opacity: 1}
+}
+
 .reminders {
-  margin-right: 10%;
+  margin-right: 35px;
 }
 
 .btn-success {
   margin-left: 4px;
+}
+
+.list-group-item {
+  animation: fadeOpacity 1s;
 }
