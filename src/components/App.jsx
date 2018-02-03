@@ -102,6 +102,7 @@ class App extends Component {
           >
             Добавить напоминание
           </div>
+          
         </div>
         {this.renderReminders()}
         <div
